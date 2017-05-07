@@ -24,7 +24,7 @@ function inFade() {
 }
 
 function newQuote() {
-    var url = $.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(data) {
+    var url = $.getJSON("https://random-quote-generator.herokuapp.com/api/quotes/random", function(data) {
         author = data.author;
         quote = data.quote;
         string = quote + " - " + author;
